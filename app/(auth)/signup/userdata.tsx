@@ -1,10 +1,10 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import { useSession, signIn, signOut } from "next-auth/react";
+import Image from 'next/image'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 export default function UserData() {
-  const { data: session } = useSession();
+  const { data: session } = useSession()
 
   if (session) {
     return (
@@ -13,9 +13,9 @@ export default function UserData() {
         <p>Component level</p>
         <p>{session?.user?.name}</p>
         <p>{session?.user?.email}</p>
-        <Image 
-          src={session?.user?.image as string} 
-          alt={session?.user?.name as string} 
+        <Image
+          src={session?.user?.image as string}
+          alt={session?.user?.name as string}
           width={200}
           height={200}
         />

@@ -1,13 +1,9 @@
-import AuthContext from "./authcontext";
+import AuthContext from './authcontext'
 
 export interface AccountLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function AccountLayout({ children }: AccountLayoutProps) {
-  return (
-    <AuthContext>
-      {children}
-    </AuthContext>
-  );
+  return <AuthContext>{children}</AuthContext>
 }

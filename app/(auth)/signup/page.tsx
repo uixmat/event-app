@@ -1,4 +1,4 @@
-import UserData from "./userdata"
+import UserData from './userdata'
 
 const Page = () => {
   return (

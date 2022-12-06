@@ -1,18 +1,14 @@
 import Users from './users'
 
 interface Props {
-  children: React.ReactNode,
+  children: React.ReactNode
 }
 
-const UsersLayout: React.FunctionComponent<Props> = ({
-  children
-}: Props) => {
+const UsersLayout: React.FunctionComponent<Props> = ({ children }: Props) => {
   return (
     <>
       <Users />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </>
   )
 }

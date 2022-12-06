@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
 import './globals.css'
 import Header from 'app/components/header'
 import { SessionProvider } from 'next-auth/react'
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
@@ -15,7 +15,7 @@ export default function RootLayout({
         <head />
         <body>
           <Header />
-          {children}        
+          {children}
         </body>
       </html>
     </SessionProvider>
