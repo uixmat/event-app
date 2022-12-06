@@ -2,7 +2,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import { unstable_getServerSession } from "next-auth/next"
 import { authOptions } from '@/api/auth/[...nextauth]'
 
-import Header from "@/components/header"
+import Header from "app/components/header"
 
 export default function Component() {
   const { data: session } = useSession()
