@@ -24,9 +24,15 @@ export default function UserData() {
     )
   }
   return (
-    <div>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+    <div className="flex flex-col items-center w-full">
+      <h1 className="text-5xl font-mona">
+        <b className="font-mona-bold">INTR</b>VNT
+      </h1>
+
+      <div>
+        Not signed in <br />
+        <button onClick={() => signIn()}>Sign in</button>
+      </div>
     </div>
   )
 }
