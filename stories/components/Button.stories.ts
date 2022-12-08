@@ -6,7 +6,12 @@ import { Button } from './Button'
 const meta: Meta<typeof Button> = {
   title: 'UI/Components/Button',
   component: Button,
-  tags: ['docsPage']
+  tags: ['docsPage'],
+  argTypes: {
+    icon: {
+      control: { type: 'select' }
+    }
+  }
 }
 
 export default meta
