@@ -41,7 +41,7 @@ Install all dependencies and run your dev environement.
   yarn dev
 ```
 
-That's it, enjoy :+1:
+Enjoy :+1:
 
 ## NextJs
 
