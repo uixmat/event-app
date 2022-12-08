@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import { useSession, signIn, signOut } from 'next-auth/react'
 
+import { Button } from '@/ui/components/Button'
+
 export default function UserData() {
   const { data: session } = useSession()
 
@@ -31,7 +33,8 @@ export default function UserData() {
 
       <div>
         Not signed in <br />
-        <button onClick={() => signIn()}>Sign in</button>
+        <br />
+        <Button label="Sign in" size="large" primary onClick={() => signIn()} />
       </div>
     </div>
   )
