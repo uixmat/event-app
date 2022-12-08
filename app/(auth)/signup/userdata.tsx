@@ -4,15 +4,20 @@ import Image from 'next/image'
 import { useSession, signIn, signOut } from 'next-auth/react'
 
 import { Button } from '@/ui/components/Button'
+import { Header } from '@/ui/components/Header'
 
 export default function UserData() {
   const { data: session } = useSession()
 
   if (session) {
     return (
-      <div>
+      <div className="flex flex-col items-center w-full">
+        <Header />
         <br className="mb-10" />
-        <p>Component level</p>
+        <p>
+          Component level <code>(auth)/signup</code>
+        </p>
+        <br />
         <p>{session?.user?.name}</p>
         <p>{session?.user?.email}</p>
         <Image
