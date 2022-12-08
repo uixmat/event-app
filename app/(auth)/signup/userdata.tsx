@@ -26,15 +26,19 @@ export default function UserData() {
     )
   }
   return (
-    <div className="flex flex-col items-center w-full">
-      <h1 className="text-5xl font-mona">
+    <div className="flex flex-col items-center w-full pt-20">
+      <h1 className="mb-10 text-5xl font-mona">
         <b className="font-mona-bold">INTR</b>VNT
       </h1>
 
-      <div>
-        Not signed in <br />
-        <br />
-        <Button label="Sign in" size="large" primary onClick={() => signIn()} />
+      <div className="flex flex-col items-center gap-4">
+        Sign in to create an account
+        <Button
+          label="Sign in with GitHub"
+          size="default"
+          primary
+          onClick={() => signIn()}
+        />
       </div>
     </div>
   )

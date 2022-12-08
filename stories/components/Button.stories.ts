@@ -6,12 +6,7 @@ import { Button } from './Button'
 const meta: Meta<typeof Button> = {
   title: 'UI/Components/Button',
   component: Button,
-  tags: ['docsPage'],
-  argTypes: {
-    backgroundColor: {
-      control: 'color'
-    }
-  }
+  tags: ['docsPage']
 }
 
 export default meta
@@ -27,6 +22,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
+    size: 'default',
     label: 'Button'
   }
 }
@@ -34,13 +30,6 @@ export const Secondary: Story = {
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button'
-  }
-}
-
-export const Small: Story = {
-  args: {
-    size: 'small',
-    label: 'Button'
+    label: 'Large Button'
   }
 }
