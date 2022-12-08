@@ -5,11 +5,9 @@
   </picture>
 </p>
 
-This is an open source events app I'm currently designing and building for fun as a way to improve my own knowledge and skillsets.
+An open source events app for casual football teams built with NextJs 13, Prisma and MongoDB. Design system built with Tailwind and Storybook.
 
-<div class="p-3 mb-4 border extended-markdown tip rounded-1 color-border-accent-emphasis color-bg-accent f5">
-This repository is currently in development
-</div>
+> This repository is currently in development
 
 ## Core Technologies
 
@@ -26,6 +24,7 @@ To run this project locally you will first need to setup your MongoDB locally or
 Create your `.env.local` file with the following setup.
 
 ```bash
+# env.local
 NEXTAUTH_SECRET=
 NEXTAUTH_URL="http://localhost:3000"
 
@@ -43,3 +42,12 @@ Install all dependencies and run your dev environement.
 ```
 
 That's it, enjoy :+1:
+
+## NextJs
+
+Built with Next.js 13 Typescript and the new [app directory](https://beta.nextjs.org/docs/routing/fundamentals#the-app-directory) and [route groups](https://beta.nextjs.org/docs/routing/defining-routes#route-groups) to separate the sign-in/up flow.
+
+### Dependencies
+
+- Typescript
+- [NextAuth.js](https://next-auth.js.org/getting-started/introduction)
