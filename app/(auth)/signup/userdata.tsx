@@ -36,6 +36,7 @@ export default function UserData() {
         <Button
           label="Sign in with GitHub"
           size="default"
+          icon="GitHub"
           primary
           onClick={() => signIn()}
         />

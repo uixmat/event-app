@@ -1,8 +1,10 @@
 import React from 'react'
+import { ImGoogle, ImFacebook, ImGithub, ImTwitter } from 'react-icons/im'
 
 interface ButtonProps {
   primary?: boolean
   size?: 'default' | 'large'
+  icon?: 'none' | 'Google' | 'Facebook' | 'GitHub' | 'Twitter'
   label: string
   onClick?: () => void
 }
@@ -10,6 +12,7 @@ interface ButtonProps {
 export const Button = ({
   primary = false,
   size = 'default',
+  icon = 'none',
   label,
   ...props
 }: ButtonProps) => {
@@ -28,8 +31,16 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={['rounded font-medium shadow-lg', mode, sizing].join(' ')}
+      className={[
+        'rounded font-medium shadow-lg inline-flex items-center gap-2',
+        mode,
+        sizing
+      ].join(' ')}
       {...props}>
+      {icon === 'Google' ? <ImGoogle /> : ''}
+      {icon === 'Facebook' ? <ImFacebook /> : ''}
+      {icon === 'GitHub' ? <ImGithub /> : ''}
+      {icon === 'Twitter' ? <ImTwitter /> : ''}
       {label}
     </button>
   )
