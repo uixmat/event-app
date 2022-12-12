@@ -25,6 +25,8 @@ export default async function Page() {
             <div className="flex flex-col items-center gap-4">
               Sign in to create an account
               <SignIn />
+              Welcome
+              <SignOut />
             </div>
           </div>
         </>
