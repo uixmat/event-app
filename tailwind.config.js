@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         mona: ['Mona-Sans', 'sans-serif'],
         'mona-bold': ['Mona-Sans-Bold', 'sans-serif']
+      },
+      width: {
+        472: '472px'
       }
     }
   },

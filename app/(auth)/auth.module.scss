@@ -1,0 +1,33 @@
+.body {
+  box-sizing: border-box;
+  display: block;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  background: #0e0a1e;
+  color: white;
+  position: relative;
+}
+
+.bgPrimary {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+}
+
+.bgPrimary {
+  background: radial-gradient(
+      circle at 90vw 60vh,
+      #9618d9 0%,
+      rgba(#0e0a1e, 0) 60%
+    ),
+    radial-gradient(
+      circle at 50vw 50vh,
+      rgba(#0045ff, 0.7) 0%,
+      rgba(#0e0a1e, 0) 80%
+    );
+}
